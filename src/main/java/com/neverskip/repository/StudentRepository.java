@@ -1,4 +1,4 @@
-package com.neverskip.repsoitory;
+package com.neverskip.repository;
 
 import java.util.List;
 
