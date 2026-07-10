@@ -1,6 +1,6 @@
 services:
   - type: web
     name: neverskip-back
-    runtime: java
+    env: java
     buildCommand: ./mvnw clean package
     startCommand: java -jar target/NeverSkip-0.0.1-SNAPSHOT.jar
