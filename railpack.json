@@ -1,0 +1,11 @@
+{
+  "$schema": "https://schema.railpack.com",
+  "build": {
+    "commands": [
+      "mvn clean package"
+    ]
+  },
+  "start": {
+    "command": "java -jar target/NeverSkip-0.0.1-SNAPSHOT.jar"
+  }
+}
