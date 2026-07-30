@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NeverSkip Dashboard</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/dashboard.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- ================= SIDEBAR ================= -->
+
+    <aside class="sidebar">
+
+        <div class="logo">
+
+            <div class="logo-icon">
+                NS
+            </div>
+
+            <div class="logo-text">
+                <h2>neverskip</h2>
+            </div>
+
+        </div>
+
+        <ul class="menu">
+
+            <li class="active">
+                <i class="bi bi-grid-fill"></i>
+                Dashboard
+            </li>
+
+            <li onclick="window.location.href='students.html'" style="cursor:pointer;">
+                <i class="bi bi-people-fill"></i>
+                Students
+            </li>
+
+            <li onclick="window.location.href='reports.html'" style="cursor:pointer;">
+                <i class="bi bi-bar-chart-fill"></i>
+                Reports
+            </li>
+
+            <li>
+                <i class="bi bi-gear-fill"></i>
+                Settings
+            </li>
+
+            <!-- Sidebar Logout -->
+            <li class="logout" onclick="logout()" style="cursor:pointer;">
+                <i class="bi bi-box-arrow-right"></i>
+                Logout
+            </li>
+
+        </ul>
+
+        <div class="sidebar-footer">
+
+            <p>NeverSkip v1.0</p>
+
+            <small>© 2026</small>
+
+        </div>
+
+    </aside>
+
+    <!-- ================= MAIN CONTENT ================= -->
+
+    <main class="main-content">
+
+        <!-- NAVBAR -->
+
+        <header class="navbar">
+
+            <div class="nav-right">
+
+                <div class="nav-item">
+                    <i class="bi bi-person-circle"></i>
+                    Admin
+                </div>
+
+                <div class="nav-item">
+                    <i class="bi bi-bell"></i>
+                    Notification
+                </div>
+
+                <!-- Navbar Logout -->
+                <div class="nav-item" onclick="logout()" style="cursor:pointer;">
+                    <i class="bi bi-box-arrow-right"></i>
+                    Logout
+                </div>
+
+            </div>
+
+        </header>
+
+        <!-- WELCOME -->
+
+        <section class="welcome">
+
+            <h1>Welcome back, Sahana! 👋</h1>
+
+            <p>
+                Manage your students and monitor school activities with ease.
+            </p>
+
+        </section>
+
+        <!-- STATISTICS -->
+
+        <section class="stats">
+
+    <div class="card">
+
+        <h3>👨‍🎓 Students</h3>
+
+        <p>Total Students</p>
+
+        <h2 id="totalStudents">--</h2>
+
+    </div>
+
+    <div class="card">
+
+        <h3>📈 Score</h3>
+
+        <p>Average Score</p>
+
+        <h2 id="avgScore">--</h2>
+
+    </div>
+
+    <div class="card">
+
+        <h3>🏫 Classes</h3>
+
+        <p>Classes</p>
+
+        <h2 id="totalClasses">--</h2>
+
+    </div>
+
+    <div class="card">
+
+        <h3>📂 Upload</h3>
+
+        <p>CSV Uploaded</p>
+
+        <h2 id="csvUploads">--</h2>
+
+    </div>
+
+</section>
+
+        <!-- QUICK ACTION -->
+
+        <section class="quick-action">
+
+            <h2>Quick Action</h2>
+
+            <div class="action-buttons">
+
+                <button id="addStudentBtn">
+                    ➕ Add Student
+                </button>
+
+                <button id="uploadBtn">
+                    📤 Upload CSV
+                </button>
+
+                <button id="viewBtn">
+                    👨‍🎓 View Students
+                </button>
+
+                <button id="searchBtn">
+                    🔍 Search Student
+                </button>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
+
+<!-- JavaScript -->
+<script src="js/dashboard.js"></script>
+
+</body>
+</html>

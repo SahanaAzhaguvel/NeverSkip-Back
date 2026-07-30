@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NeverSkip - Login</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/login.css">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+
+    <div class="background">
+
+        <div class="login-container">
+
+            <!-- LEFT PANEL -->
+
+            <div class="left-panel">
+
+                <div class="logo">
+
+                    <div class="logo-circle">
+                        <i class="bi bi-box-seam"></i>
+                    </div>
+
+                    <div class="logo-text">
+                        <h2>neverskip</h2>
+                        <p>school student interface</p>
+                    </div>
+
+                </div>
+
+
+                <div class="welcome-text">
+
+                    <h1>Welcome to..</h1>
+
+                    <p>
+                        Manage student records efficiently and securely
+                    </p>
+
+                </div>
+
+
+                <div class="shapes">
+
+                    <div class="shape circle"></div>
+
+                    <div class="shape diamond"></div>
+
+                    <div class="shape triangle"></div>
+
+                    <div class="shape square"></div>
+
+                    <div class="shape semicircle"></div>
+
+                </div>
+
+            </div>
+
+
+            <!-- RIGHT PANEL -->
+
+            <div class="right-panel">
+
+                <h1 class="login-title">
+                    Login
+                </h1>
+
+                <form>
+
+                    <label>Username</label>
+
+                    <div class="input-box">
+
+                        <i class="bi bi-person"></i>
+
+                        <input
+                            type="text"
+                            id = "username"
+                            placeholder="Student ID / Username">
+
+                    </div>
+
+
+                    <label>Password</label>
+
+                    <div class="input-box">
+
+                        <i class="bi bi-lock"></i>
+
+                        <input
+                            type="password"
+                            id = "password"
+                            placeholder="Enter your password">
+
+                        <i class="bi bi-eye"></i>
+
+                    </div>
+
+
+                    <div class="options">
+
+                        <div>
+
+                            <input type="checkbox">
+
+                            <span>Remember Me</span>
+
+                        </div>
+
+                        <a href="#">
+                            Forgot Password?
+                        </a>
+
+                    </div>
+
+
+                   <button type="button" onclick="login()">
+    Login
+</button>
+
+<script src="js/login.js"></script>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
